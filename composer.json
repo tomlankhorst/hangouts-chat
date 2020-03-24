@@ -7,14 +7,14 @@
         {
             "name": "Renan William Alves de Paula",
             "email": "renan@4success.com.br",
-            "homepage": "https://www.4success.com.br",
-            "role": "Developer"
         }
     ],
     "require": {
         "php": ">=7.2",
+        "google/apiclient": "^2.0",
         "illuminate/notifications": "~5.5 || ~6.0 || ~7.0",
-        "illuminate/support": "~5.5 || ~6.0 || ~7.0"
+        "illuminate/support": "~5.5 || ~6.0 || ~7.0",
+        "ext-json": "*"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",

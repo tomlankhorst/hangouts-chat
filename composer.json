@@ -1,13 +1,13 @@
 {
-    "name": "laravel-notification-channels/:package_name",
-    "description": ":package_description",
-    "homepage": "https://github.com/laravel-notification-channels/:package_name",
+    "name": "laravel-notification-channels/hangouts-chat",
+    "description": "Notifications from Laravel to Google Hangouts Chat",
+    "homepage": "https://github.com/laravel-notification-channels/hangouts-chat",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Renan William Alves de Paula",
+            "email": "renan@4success.com.br",
+            "homepage": "https://www.4success.com.br",
             "role": "Developer"
         }
     ],
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\:channel_namespace\\": "src"
+            "NotificationChannels\\GoogleHangoutsChatChannel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotificationChannels\\:channel_namespace\\Test\\": "tests"
+            "NotificationChannels\\GoogleHangoutsChatChannel\\Test\\": "tests"
         }
     },
     "scripts": {

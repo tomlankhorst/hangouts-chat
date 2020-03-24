@@ -1,10 +1,10 @@
 <?php
 
-namespace NotificationChannels\:channel_namespace;
+namespace NotificationChannels\GoogleHangoutsChatChannel;
 
 use Illuminate\Support\Arr;
 
-class :service_nameMessage
+class GoogleHangoutsChatMessage
 {
     // Message structure here
 }

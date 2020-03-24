@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright (c) :author_name <:author_email>
+Copyright (c) Renan William Alves de Paula <renan@4success.com.br>
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal

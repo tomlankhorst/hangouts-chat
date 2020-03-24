@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "Renan William Alves de Paula",
-            "email": "renan@4success.com.br",
+            "email": "renan@4success.com.br"
         }
     ],
     "require": {
@@ -31,8 +31,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "test:coverage": "phpunit --coverage-text --coverage-clover=coverage.clover"
+        "test": "vendor/bin/phpunit"
     },
     "config": {
         "sort-packages": true

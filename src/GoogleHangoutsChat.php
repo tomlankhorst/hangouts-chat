@@ -31,11 +31,11 @@ class GoogleHangoutsChat
         return $this->chat->spaces->listSpaces();
     }
 
-    public function send(string $space, GoogleHangoutsChatMessage $message)
+    public function send(GoogleHangoutsChatMessage $message)
     {
         $payload = new Google_Service_HangoutsChat_Message();
         $payload->setText($message->text);
 
-        return $this->chat->spaces_messages->create($space, $payload);
+        return $this->chat->spaces_messages->create($message->space, $payload);
     }
 }

@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\GoogleHangoutsChatChannel\\": "src"
+            "NotificationChannels\\GoogleHangoutsChat\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotificationChannels\\GoogleHangoutsChatChannel\\Test\\": "tests"
+            "NotificationChannels\\GoogleHangoutsChat\\Test\\": "tests"
         }
     },
     "scripts": {

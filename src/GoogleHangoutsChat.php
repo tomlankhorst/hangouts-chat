@@ -1,11 +1,10 @@
 <?php
 
-namespace NotificationChannels\Hangouts;
+namespace NotificationChannels\GoogleHangoutsChat;
 
 use Google_Client;
 use Google_Service_HangoutsChat;
 use Google_Service_HangoutsChat_Message;
-use NotificationChannels\GoogleHangoutsChatChannel\GoogleHangoutsChatMessage;
 
 class GoogleHangoutsChat
 {
@@ -36,6 +35,6 @@ class GoogleHangoutsChat
         $payload = new Google_Service_HangoutsChat_Message();
         $payload->setText($message->text);
 
-        return $this->chat->spaces_messages->create($message->space, $payload);
+        return $this->chat->spaces_messages->create($message->space->name, $payload);
     }
 }

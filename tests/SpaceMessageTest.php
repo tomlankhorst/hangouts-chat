@@ -2,11 +2,11 @@
 
 namespace NotificationChannels\GoogleHangoutsChatChannel\Test;
 
-use NotificationChannels\GoogleHangoutsChatChannel\GoogleHangoutsChatMessage;
-use NotificationChannels\Hangouts\GoogleHangoutsChat;
+use NotificationChannels\GoogleHangoutsChat\GoogleHangoutsChat;
+use NotificationChannels\GoogleHangoutsChat\GoogleHangoutsChatMessage;
 use PHPUnit\Framework\TestCase;
 
-class SpaceMessageCase extends TestCase
+class SpaceMessageTest extends TestCase
 {
     /** @test
      * @throws \Google_Exception
@@ -17,7 +17,8 @@ class SpaceMessageCase extends TestCase
         $this->assertTrue(file_exists($config));
 
         $json = file_get_contents($config);
-        $this->assertTrue($config = json_decode($json, true));
+        $config = json_decode($json, true);
+        $this->assertTrue(is_array($config));
 
         $hangouts = new GoogleHangoutsChat($config);
         $spaces = $hangouts->spaces();

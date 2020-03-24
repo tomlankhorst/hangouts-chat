@@ -1,9 +1,9 @@
 <?php
 
-namespace NotificationChannels\GoogleHangoutsChatChannel;
+namespace NotificationChannels\GoogleHangoutsChat;
 
 use Illuminate\Support\ServiceProvider;
-use NotificationChannels\Hangouts\GoogleHangoutsChat;
+use NotificationChannels\GoogleHangoutsChat\GoogleHangoutsChat;
 
 class GoogleHangoutsChatServiceProvider extends ServiceProvider
 {

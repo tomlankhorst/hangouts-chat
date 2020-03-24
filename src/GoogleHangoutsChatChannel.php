@@ -1,10 +1,9 @@
 <?php
 
-namespace NotificationChannels\GoogleHangoutsChatChannel;
+namespace NotificationChannels\GoogleHangoutsChat;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\Hangouts\GoogleHangoutsChat;
-use NotificationChannels\GoogleHangoutsChatChannel\Exceptions\CouldNotSendNotification;
+use NotificationChannels\GoogleHangoutsChat\Exceptions\CouldNotSendNotification;
 
 class GoogleHangoutsChatChannel
 {
@@ -39,9 +38,9 @@ class GoogleHangoutsChatChannel
             if (empty($space)) {
                 throw new CouldNotSendNotification('Notifiable must have a routeNotificationFor() space');
             }
-            return $this->hangouts->send($space, $message);
+            return $this->hangouts->send($message);
         } else {
-            return $this->hangouts->send($message->space, $message);
+            return $this->hangouts->send($message);
         }
     }
 }

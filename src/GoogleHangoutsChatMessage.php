@@ -1,11 +1,14 @@
 <?php
 
-namespace NotificationChannels\GoogleHangoutsChatChannel;
+namespace NotificationChannels\GoogleHangoutsChat;
 
 
 class GoogleHangoutsChatMessage
 {
+    /** @var string */
     public $text;
+
+    /** @var \Google_Service_HangoutsChat_Space  */
     public $space;
 
     public function __construct($space = null, $text = null)
@@ -15,14 +18,22 @@ class GoogleHangoutsChatMessage
     }
 
 
-    public function space($text)
+    /**
+     * @param \Google_Service_HangoutsChat_Space $space
+     * @return $this
+     */
+    public function space($space)
     {
-        $this->text = $text;
+        $this->space = $space;
 
         return $this;
     }
 
 
+    /**
+     * @param string $text
+     * @return $this
+     */
     public function text($text)
     {
         $this->text = $text;

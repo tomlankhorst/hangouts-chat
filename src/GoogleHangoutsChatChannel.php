@@ -31,10 +31,10 @@ class GoogleHangoutsChatChannel
     public function send($notifiable, Notification $notification)
     {
         /** @var GoogleHangoutsChatMessage $message */
-        $message = $notification->{'toHangouts'}($notifiable);
+        $message = $notification->{'toHangoutsChat'}($notifiable);
 
         if (empty($message->space)) {
-            $space = ($notifiable->routeNotificationFor('googleHangouts'));
+            $space = ($notifiable->routeNotificationFor('hangoutsChat'));
 
             if (empty($space)) {
                 throw new CouldNotSendNotification('Notifiable must have a routeNotificationFor() space');

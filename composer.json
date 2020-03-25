@@ -22,16 +22,23 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\GoogleHangoutsChat\\": "src"
+            "NotificationChannels\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotificationChannels\\GoogleHangoutsChat\\Test\\": "tests"
+            "NotificationChannels\\Test\\": "tests"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Illuminate\\Notifications\\HangoutsChatChannelServiceProvider"
+            ]
+        }
     },
     "config": {
         "sort-packages": true

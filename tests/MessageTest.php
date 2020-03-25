@@ -3,7 +3,7 @@
 namespace NotificationChannels\GoogleHangoutsChat\Test;
 
 use Illuminate\Support\Arr;
-use NotificationChannels\GoogleHangoutsChat\HangoutsChatMessage;
+use NotificationChannels\HangoutsChatMessage;
 use PHPUnit\Framework\TestCase;
 
 class MessageTest extends TestCase

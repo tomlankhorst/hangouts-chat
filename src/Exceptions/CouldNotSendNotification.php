@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\GoogleHangoutsChat\Exceptions;
+namespace NotificationChannels\Exceptions;
 
 use Exception;
 use Psr\Http\Message\ResponseInterface;

@@ -7,9 +7,9 @@ use GuzzleHttp\Psr7\Response;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
 use Mockery;
-use NotificationChannels\GoogleHangoutsChat\Exceptions\CouldNotSendNotification;
-use NotificationChannels\GoogleHangoutsChat\HangoutsChatChannel;
-use NotificationChannels\GoogleHangoutsChat\HangoutsChatMessage;
+use NotificationChannels\Exceptions\CouldNotSendNotification;
+use NotificationChannels\HangoutsChatChannel;
+use NotificationChannels\HangoutsChatMessage;
 use PHPUnit\Framework\TestCase;
 
 class ChannelTest extends TestCase

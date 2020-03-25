@@ -33,7 +33,7 @@ class HangoutsChatChannel
      */
     public function send($notifiable, Notification $notification)
     {
-        if (! $url = $notifiable->routeNotificationFor('hangoutsChat')) {
+        if (! $url = $notifiable->routeNotificationFor(HangoutsChatChannel::class)) {
             return;
         }
 

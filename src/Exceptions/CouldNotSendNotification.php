@@ -2,42 +2,45 @@
 
 namespace NotificationChannels\GoogleHangoutsChat\Exceptions;
 
-use Illuminate\Support\Arr;
+
 use Psr\Http\Message\ResponseInterface;
 
 class CouldNotSendNotification extends \Exception
 {
+    private $response;
+
     /**
-     * @param \Psr\Http\Message\ResponseInterface $response
-     *
-     * @return CouldNotSendNotification
+     * @param ResponseInterface $response
+     * @param string $message
+     * @param int|null $code
      */
-    public static function serviceRespondedWithAnHttpError(ResponseInterface $response)
+    public function __construct(ResponseInterface $response, string $message, int $code = null)
     {
-        $message = "Hangouts responded with an HTTP error: {$response->getStatusCode()}";
-        if ($error = Arr::get(json_decode($response->getBody(), true), 'message')) {
-            $message .= ": $error";
-        }
-        return new static($message);
+        $this->response = $response;
+        $this->message = $message;
+        $this->code = $code ?? $response->getStatusCode();
+
+        parent::__construct($message, $code);
     }
 
     /**
-     * @param array $response
-     *
-     * @return static
+     * @param ResponseInterface $response
+     * @return self
      */
-    public static function serviceRespondedWithAnApiError(array $response)
+    public static function serviceRespondedWithAnError(ResponseInterface $response)
     {
-        return new static("Hangouts responded with an API error: {$response['code']}: {$response['message']}");
+        return new self(
+            $response,
+            sprintf('Google Hangouts Chat API responded with an error: `%s`', $response->getBody()->getContents())
+        );
     }
 
     /**
-     * @param \Exception $exception
-     *
-     * @return static
+     * @return ResponseInterface
      */
-    public static function serviceCommunicationError(\Exception $exception)
+    public function getResponse()
     {
-        return new static("Communication with Hangouts failed: {$exception->getCode()}: {$exception->getMessage()}");
+        return $this->response;
     }
+
 }

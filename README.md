@@ -59,8 +59,9 @@ class ProjectCreated extends Notification
 ```
 
 In order to let your Notification know which URL should receive the Webhook data, add the `routeNotificationForHangoutsChat` method to your Notifiable model.
-
 This method needs to return the URL where the notification Webhook will receive a POST request.
+
+Please look at [Hangouts Chat Message Formats](https://developers.google.com/hangouts/chat/reference/message-formats) to understand how send the messages.
 
 ```php
 public function routeNotificationForHangoutsChat()

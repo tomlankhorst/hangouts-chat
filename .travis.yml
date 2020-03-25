@@ -16,7 +16,7 @@ before_script:
 
 script:
   - composer validate
-  - composer test:coverage
+  - ./vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Notifications;
+namespace NotificationChannels;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\Facades\Notification;

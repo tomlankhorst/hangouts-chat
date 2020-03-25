@@ -27,7 +27,12 @@ This package makes it easy to send notifications using [Google Hangouts Chat](ht
 
 ## Installation
 
-Please also include the steps for any third-party service setup that's required for this package.
+Install this package with Composer:
+
+```bash
+composer require laravel-notification-channels/hangouts-chat
+```
+
 
 ### Setting up the Google Hangouts Chat service
 

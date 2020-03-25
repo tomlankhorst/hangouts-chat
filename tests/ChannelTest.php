@@ -4,6 +4,7 @@ namespace NotificationChannels\GoogleHangoutsChat\Test;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
 use Mockery;
 use NotificationChannels\GoogleHangoutsChat\Exceptions\CouldNotSendNotification;
@@ -111,7 +112,7 @@ class ChannelTest extends TestCase
 
 class TestNotifiable
 {
-    use \Illuminate\Notifications\Notifiable;
+    use Notifiable;
 
     /**
      * @return int

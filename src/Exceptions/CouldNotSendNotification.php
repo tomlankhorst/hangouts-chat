@@ -3,9 +3,10 @@
 namespace NotificationChannels\GoogleHangoutsChat\Exceptions;
 
 
+use Exception;
 use Psr\Http\Message\ResponseInterface;
 
-class CouldNotSendNotification extends \Exception
+class CouldNotSendNotification extends Exception
 {
     private $response;
 

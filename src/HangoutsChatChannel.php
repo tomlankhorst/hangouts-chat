@@ -7,6 +7,7 @@ use GuzzleHttp\Client;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Arr;
 use NotificationChannels\GoogleHangoutsChat\Exceptions\CouldNotSendNotification;
+use Psr\Http\Message\ResponseInterface;
 
 class HangoutsChatChannel
 {
@@ -25,11 +26,11 @@ class HangoutsChatChannel
      * Send the given notification.
      *
      * @param mixed $notifiable
-     * @param \Illuminate\Notifications\Notification $notification
+     * @param Notification $notification
      *
-     * @return \Psr\Http\Message\ResponseInterface|void
+     * @return ResponseInterface|void
      *
-     * @throws \NotificationChannels\GoogleHangoutsChat\Exceptions\CouldNotSendNotification
+     * @throws CouldNotSendNotification
      */
     public function send($notifiable, Notification $notification)
     {

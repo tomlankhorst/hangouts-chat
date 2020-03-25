@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class MessageTest extends TestCase
 {
-    /** @var \NotificationChannels\GoogleHangoutsChat\HangoutsChatMessage */
+    /** @var HangoutsChatMessage */
     protected $message;
 
     public function setUp(): void

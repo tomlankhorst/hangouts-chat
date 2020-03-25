@@ -43,20 +43,20 @@ class HangoutsChatMessage
 
     /**
      * @param mixed $data
+     */
+    public function __construct($data = '')
+    {
+        $this->data = $data;
+    }
+
+    /**
+     * @param mixed $data
      *
      * @return static
      */
     public static function create($data = '')
     {
         return new static($data);
-    }
-
-    /**
-     * @param mixed $data
-     */
-    public function __construct($data = '')
-    {
-        $this->data = $data;
     }
 
     /**

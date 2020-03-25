@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\GoogleHangoutsChat\Test;
+namespace NotificationChannels\Test;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;

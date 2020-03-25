@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\GoogleHangoutsChat\Test;
+namespace NotificationChannels\Test;
 
 use Illuminate\Support\Arr;
 use NotificationChannels\HangoutsChatMessage;

@@ -2,11 +2,11 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-notification-channels/hangouts-chat.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/hangouts-chat)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/laravel-notification-channels/hangouts-chat/master.svg?style=flat-square)](https://travis-ci.org/laravel-notification-channels/hangouts-chat)
+[![Build Status](https://img.shields.io/travis/renanwilliam/hangouts-chat/master.svg?style=flat-square)](https://travis-ci.org/renanwilliam/hangouts-chat)
 [![StyleCI](https://styleci.io/repos/249778594/shield)](https://styleci.io/repos/249778594)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/39bcd940-8051-49cd-880b-a214d8e3622e.svg?style=flat-square)](https://insight.sensiolabs.com/projects/39bcd940-8051-49cd-880b-a214d8e3622e)
-[![Quality Score](https://img.shields.io/scrutinizer/g/laravel-notification-channels/hangouts-chat.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/hangouts-chat)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/laravel-notification-channels/hangouts-chat/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/hangouts-chat/?branch=master)
+[![SymfonyInsight](https://insight.symfony.com/projects/09f89605-6bc8-49f7-a007-272754f110d2/mini.svg)](https://insight.symfony.com/projects/09f89605-6bc8-49f7-a007-272754f110d2)
+[![Quality Score](https://img.shields.io/scrutinizer/g/renanwilliam/hangouts-chat.svg?style=flat-square)](https://scrutinizer-ci.com/g/renanwilliam/hangouts-chat)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/renanwilliam/hangouts-chat/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/renanwilliam/hangouts-chat/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/hangouts-chat.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/hangouts-chat)
 
 This package makes it easy to send notifications using [Google Hangouts Chat](https://gsuite.google.com/products/chat/) with Laravel 5.5+, 6.x and 7.x

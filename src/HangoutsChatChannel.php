@@ -1,6 +1,5 @@
 <?php
 
-
 namespace NotificationChannels\GoogleHangoutsChat;
 
 use GuzzleHttp\Client;
@@ -34,7 +33,7 @@ class HangoutsChatChannel
      */
     public function send($notifiable, Notification $notification)
     {
-        if (!$url = $notifiable->routeNotificationFor('hangoutsChat')) {
+        if (! $url = $notifiable->routeNotificationFor('hangoutsChat')) {
             return;
         }
 

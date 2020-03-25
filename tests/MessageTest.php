@@ -1,6 +1,5 @@
 <?php
 
-
 namespace NotificationChannels\GoogleHangoutsChat\Test;
 
 use Illuminate\Support\Arr;

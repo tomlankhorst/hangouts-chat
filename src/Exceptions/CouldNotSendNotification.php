@@ -2,7 +2,6 @@
 
 namespace NotificationChannels\GoogleHangoutsChat\Exceptions;
 
-
 use Exception;
 use Psr\Http\Message\ResponseInterface;
 
@@ -43,5 +42,4 @@ class CouldNotSendNotification extends Exception
     {
         return $this->response;
     }
-
 }

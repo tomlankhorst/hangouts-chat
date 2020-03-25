@@ -1,8 +1,6 @@
 <?php
 
-
 namespace NotificationChannels\GoogleHangoutsChat;
-
 
 class HangoutsChatMessage
 {

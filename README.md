@@ -50,7 +50,7 @@ class ProjectCreated extends Notification
 {
     public function via($notifiable)
     {
-        return [HangoutsChatChannel::class];
+        return ['hangoutsChat'];
     }
 
     public function toHangoutsChat$notifiable)
@@ -62,11 +62,11 @@ class ProjectCreated extends Notification
     }
 }
 ```
+Please look at [Hangouts Chat Message Formats](https://developers.google.com/hangouts/chat/reference/message-formats) to understand how send the messages.
 
 In order to let your Notification know which URL should receive the Webhook data, add the `routeNotificationForHangoutsChat` method to your Notifiable model.
 This method needs to return the URL where the notification Webhook will receive a POST request.
 
-Please look at [Hangouts Chat Message Formats](https://developers.google.com/hangouts/chat/reference/message-formats) to understand how send the messages.
 
 ```php
 public function routeNotificationForHangoutsChat()
@@ -75,6 +75,11 @@ public function routeNotificationForHangoutsChat()
 }
 ```
 
+You can send to a dynamic Webhook URL on-fly using this syntax:
+```php
+Notification::route('hangoutsChat', 'https://chat.googleapis.com/v1/spaces/XXXXX-XXXXX/messages?key={key}&token={token}')
+                    ->notify(new NotificationClass($params));
+```
 
 ### Available Message methods
 

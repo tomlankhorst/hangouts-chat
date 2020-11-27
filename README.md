@@ -1,13 +1,13 @@
 # Google Hangouts Chat notification channel for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-notification-channels/hangouts-chat.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/hangouts-chat)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/tomlankhorst/hangouts-chat.svg?style=flat-square)](https://packagist.org/packages/tomlankhorst/hangouts-chat)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/renanwilliam/hangouts-chat/master.svg?style=flat-square)](https://travis-ci.org/renanwilliam/hangouts-chat)
 [![StyleCI](https://styleci.io/repos/249778594/shield)](https://styleci.io/repos/249778594)
 [![SymfonyInsight](https://insight.symfony.com/projects/09f89605-6bc8-49f7-a007-272754f110d2/mini.svg)](https://insight.symfony.com/projects/09f89605-6bc8-49f7-a007-272754f110d2)
 [![Quality Score](https://img.shields.io/scrutinizer/g/renanwilliam/hangouts-chat.svg?style=flat-square)](https://scrutinizer-ci.com/g/renanwilliam/hangouts-chat)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/renanwilliam/hangouts-chat/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/renanwilliam/hangouts-chat/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/hangouts-chat.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/hangouts-chat)
+[![Total Downloads](https://img.shields.io/packagist/dt/tomlankhorst/hangouts-chat.svg?style=flat-square)](https://packagist.org/packages/tomlankhorst/hangouts-chat)
 
 This package makes it easy to send notifications using [Google Hangouts Chat](https://gsuite.google.com/products/chat/) with Laravel 5.5+, 6.x and 7.x
 
@@ -30,7 +30,7 @@ This package makes it easy to send notifications using [Google Hangouts Chat](ht
 Install this package with Composer:
 
 ```bash
-composer require laravel-notification-channels/hangouts-chat
+composer require tomlankhorst/hangouts-chat
 ```
 
 

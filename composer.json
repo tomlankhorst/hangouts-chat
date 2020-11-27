@@ -1,7 +1,7 @@
 {
-    "name": "laravel-notification-channels/hangouts-chat",
+    "name": "tomlankhorst/hangouts-chat",
     "description": "Notifications from Laravel to Google Hangouts Chat",
-    "homepage": "https://github.com/renanwilliam/hangouts-chat",
+    "homepage": "https://github.com/tomlankhorst/hangouts-chat",
     "license": "MIT",
     "authors": [
         {
